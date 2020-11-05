@@ -1,0 +1,122 @@
+div#content{
+	height: 500px;
+	width: 900px;
+	margin-top:2px;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url(img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div#content #left{
+	float: left;
+	width: 30%;
+	height: 500px;
+	background-color: rgb(207,213,234);
+}
+
+div#content #right{
+	float: right;
+	width: 69.5%;
+	height: 500px;
+	background-color: rgb(207,213,234);
+}
+
+/*导航栏*/
+*{padding: 0;margin: 0;}  /* 先重置一下html，消除HTML标签默认的内外边距 */
+    .wrap{width: 80%;margin: 0 auto;}    /* 对导航的内容设置一个主体为800px的宽并使其居中 */
+    .clear{clear: both;}  /* 清除浮动 */
+    a{text-decoration-line: none;}   /* 去掉默认a标签的下划线 */
+    ul,li{list-style: none;}
+    nav .level>li{float: left;width: 12%;text-align: center;background: none;padding: 10px 0;font-size: 16px;transition: .4s;}
+    nav .level>li a{color: black;}
+    nav .level>li:hover{background: pink;}   /* 设置鼠标滑过后的样式 */
+ 
+    nav .two{display: none;margin-top: 10px;}  /* 先使二级菜单的内容隐藏 */
+    nav .level>li:hover .two{display: block;}   /* 鼠标滑过一级菜单后的显示二级菜单 */
+    nav .two li{padding: 5px 0;transition: .4s;cursor: pointer;}
+    nav .two li:hover{background: grey;}
+
+/*轮播图*/
+.main_center_bannar {
+    width:100%;  
+    position: relative;
+    }
+.main_center_bannar img { 
+    margin-top: 30px;
+    margin-left: 15%;
+    width: 70%;
+    height: 450px
+    }
+.main_center_bannar ul {
+    list-style: circle;
+  
+    position: absolute;
+    left:81%;
+    bottom:48%;
+    z-index: 2;
+    font-size: 2em;
+    color: white
+    }
+
+ 
+.nav{
+    width: 150px;
+    height: 205px;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    margin-top: -103px;
+    font-family: 'Miscrosoft YaHei';
+    }
+     
+/**/   
+.nav-li{
+    width: 120px;
+    height: auto;
+    border-bottom: 1px solid #FFF;
+    background: #333;
+    text-align: center;
+    line-height: 40px;
+    color: #FFF;
+    font-size: 16px;
+    cursor: pointer;
+    }
+
+/**/    
+.tit{
+    width: 120px;
+    height: 40px;
+    }
+        
+.tit a{color: white}
+
+.nav-li:hover ul{
+    display: block;
+    }
+        
+.nav-li ul{
+    width: 120px;
+    height: auto;
+    background: #FFF;
+    display: none;
+    }
+       
+/**/ 
+.nav-li ul li{
+    width: 120px;
+    height: 40px;
+    border-bottom: 1px dashed #666;
+    color: #333;
+    text-align: center;
+    line-height: 40px;
+    position: relative;
+    }
+        
+
+
+
